@@ -36,6 +36,13 @@ public class LoginActivity extends AppCompatActivity {
         password= findViewById(R.id.passwordTL);
         goButton = findViewById(R.id.goButton);
 
+        goButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this,UserProfileActivity.class));
+            }
+        });
+
         newUserRegistration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
