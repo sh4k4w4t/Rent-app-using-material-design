@@ -14,14 +14,16 @@
         android:padding="15dp">
 
         <TextView
+            android:id="@+id/descriptionCatagories"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/aclonica"
-            android:text="High Perform"
+            android:text="High Perform\nConnect\nHigh\nClass\nServices"
             android:textColor="@color/white"
             android:textSize="20sp" />
 
         <ImageView
+            android:id="@+id/imageCatagories"
             android:layout_width="110dp"
             android:layout_height="110dp"
             android:layout_alignParentRight="true"
