@@ -1,4 +1,4 @@
-package sh4k4w4t.github.io.materialrentapps;
+package sh4k4w4t.github.io.materialrentapps.DashBoard;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+import sh4k4w4t.github.io.materialrentapps.R;
 
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder> {
 

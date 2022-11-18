@@ -15,9 +15,12 @@ import android.widget.TextView;
 
 import com.google.android.material.textfield.TextInputLayout;
 
+import sh4k4w4t.github.io.materialrentapps.DashBoard.DashBoardActivity;
+import sh4k4w4t.github.io.materialrentapps.ForgetPassword.ForgetPassword;
+
 public class LoginActivity extends AppCompatActivity {
 
-    Button newUserRegistration, goButton;
+    Button newUserRegistration, goButton, forgetPassButton;
     ImageView loginLogo;
     TextView logintext,sloganText;
     TextInputLayout username,password;
@@ -35,6 +38,14 @@ public class LoginActivity extends AppCompatActivity {
         username= findViewById(R.id.usernameTL);
         password= findViewById(R.id.passwordTL);
         goButton = findViewById(R.id.goButton);
+        forgetPassButton= findViewById(R.id.forgetPasswordButtom);
+
+        forgetPassButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, ForgetPassword.class));
+            }
+        });
 
         goButton.setOnClickListener(new View.OnClickListener() {
             @Override

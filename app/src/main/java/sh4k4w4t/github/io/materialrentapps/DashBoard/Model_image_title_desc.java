@@ -1,4 +1,4 @@
-package sh4k4w4t.github.io.materialrentapps;
+package sh4k4w4t.github.io.materialrentapps.DashBoard;
 
 public class Model_image_title_desc {
     int image;

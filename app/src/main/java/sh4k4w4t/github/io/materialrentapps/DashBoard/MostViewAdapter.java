@@ -1,4 +1,4 @@
-package sh4k4w4t.github.io.materialrentapps;
+package sh4k4w4t.github.io.materialrentapps.DashBoard;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +9,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
+
+import sh4k4w4t.github.io.materialrentapps.R;
 
 public class MostViewAdapter extends RecyclerView.Adapter<MostViewAdapter.MostViewHolder>{
     ArrayList<Model_image_title_desc> mostViewLocatons;

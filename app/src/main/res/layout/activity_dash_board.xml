@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#E1E8EF"
     android:orientation="vertical"
-    tools:context=".DashBoardActivity">
+    tools:context=".DashBoard.DashBoardActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"

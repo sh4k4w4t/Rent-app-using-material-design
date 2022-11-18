@@ -1,15 +1,15 @@
-package sh4k4w4t.github.io.materialrentapps;
+package sh4k4w4t.github.io.materialrentapps.DashBoard;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.view.WindowManager;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
+
+import sh4k4w4t.github.io.materialrentapps.R;
 
 public class DashBoardActivity extends AppCompatActivity {
 
