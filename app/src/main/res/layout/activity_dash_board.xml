@@ -243,7 +243,7 @@
                 <LinearLayout
                     android:id="@+id/featuredBackground"
                     android:layout_width="170dp"
-                    android:layout_height="280dp"
+                    android:layout_height="300dp"
                     android:background="@drawable/card_2"
                     android:layout_margin="10dp"
                     android:orientation="vertical">
@@ -269,11 +269,15 @@
                 </LinearLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/featuresRecyclerview"
                     android:layout_width="match_parent"
-                    android:layout_height="280dp"
-                    android:layout_margin="10dp"
+                    android:layout_height="300dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
                     android:layout_toRightOf="@id/featuredBackground"
-                    android:background="@drawable/card_1"/>
+                    android:background="@drawable/card_1" />
 
 
             </RelativeLayout>
