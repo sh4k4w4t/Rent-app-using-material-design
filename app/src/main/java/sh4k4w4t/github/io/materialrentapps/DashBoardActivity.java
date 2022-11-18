@@ -33,10 +33,10 @@ public class DashBoardActivity extends AppCompatActivity {
         mostViewRecycleView.setHasFixedSize(true);
         mostViewRecycleView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false));
         ArrayList<Model_image_title_desc> mostViewHelperClasses= new ArrayList<>();
-        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"Ena Enterprise","Bus Services for Dhaka-Chittagong highway."));
-        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"Starline Ltd.","Bus Services for Dhaka-Chittagong highway."));
-        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"Hanif Enterprise","Bus Services for Dhaka-Chittagong highway."));
         mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Chittagong highway."));
+        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"siasoA Ltd.","Bus Services for Dhaka-B.Baria highway."));
+        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Nepal highway."));
+        mostViewHelperClasses.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Barisal highway."));
 
         mostViewAdapter= new MostViewAdapter(mostViewHelperClasses);
         mostViewRecycleView.setAdapter(mostViewAdapter);
@@ -47,10 +47,10 @@ public class DashBoardActivity extends AppCompatActivity {
         featuresRecyclerview.setHasFixedSize(true);
         featuresRecyclerview.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL,false));
         ArrayList<Model_image_title_desc> modelimagetitledescs = new ArrayList<>();
-        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"Ena Enterprise","Bus Services for Dhaka-Chittagong highway."));
-        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"Starline Ltd.","Bus Services for Dhaka-Chittagong highway."));
-        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"Hanif Enterprise","Bus Services for Dhaka-Chittagong highway."));
         modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Chittagong highway."));
+        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"siasoA Ltd.","Bus Services for Dhaka-B.Baria highway."));
+        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Nepal highway."));
+        modelimagetitledescs.add(new Model_image_title_desc(R.drawable.bus,"siasoA Enterprise","Bus Services for Dhaka-Barisal highway."));
 
         featuredAdapter = new FeaturedAdapter(modelimagetitledescs);
         featuresRecyclerview.setAdapter(featuredAdapter);
