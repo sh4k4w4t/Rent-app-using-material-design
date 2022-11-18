@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="8dp">
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/msImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/car"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/msTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/msImage"
+            android:fontFamily="@font/aclonica"
+            android:text="Toyota's"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:id="@+id/msRating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msTitle"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/msImage"
+            android:rating="4" />
+
+        <TextView
+            android:id="@+id/msDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/msRating"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/msImage"
+            android:text="Toyota's is a best car in bangladesh by the rating of Customers." />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -286,7 +286,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:padding="20dp">
 
                 <RelativeLayout
@@ -306,14 +306,16 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="View All"
+                        android:text="View All >>"
                         android:layout_centerVertical="true"/>
 
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/mostViewRecycleview"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"/>
+                    android:layout_height="150dp"
+                    android:layout_marginTop="10dp"/>
 
             </LinearLayout>
 
@@ -322,7 +324,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_marginTop="40dp"
+                android:layout_marginTop="20dp"
                 android:padding="20dp">
 
                 <RelativeLayout
@@ -342,12 +344,13 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="View All"
+                        android:text="View All >>"
                         android:layout_centerVertical="true"/>
 
                 </RelativeLayout>
 
                 <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/cetagoriesRecycleView"
                     android:layout_width="match_parent"
                     android:layout_height="100dp"/>
 

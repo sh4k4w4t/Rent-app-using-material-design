@@ -30,20 +30,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         constraintLayout= findViewById(R.id.layoutIdSplashScreen);
-//        constraintLayout.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intent= new Intent(MainActivity.this,LoginActivity.class);
-//                Pair[] pairs= new Pair[2];
-//                pairs[0] = new Pair<View,String >(imageView,"logo_image");
-//                pairs[1] = new Pair<View,String >(logo,"logo_text");
-//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//                    ActivityOptions options= ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-//                    startActivity(intent,options.toBundle());
-//                    finish();
-//                }
-//            }
-//        });
+        constraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent= new Intent(MainActivity.this,LoginActivity.class);
+                Pair[] pairs= new Pair[2];
+                pairs[0] = new Pair<View,String >(imageView,"logo_image");
+                pairs[1] = new Pair<View,String >(logo,"logo_text");
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    ActivityOptions options= ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
+                    startActivity(intent,options.toBundle());
+                    finish();
+                }
+            }
+        });
 
         topAnim= AnimationUtils.loadAnimation(this,R.anim.top_animation);
         bottomAnim= AnimationUtils.loadAnimation(this,R.anim.bottom_animation);
@@ -55,19 +55,19 @@ public class MainActivity extends AppCompatActivity {
         logo.setAnimation(bottomAnim);
         slogan.setAnimation(bottomAnim);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent intent= new Intent(MainActivity.this,LoginActivity.class);
-                Pair[] pairs= new Pair[2];
-                pairs[0] = new Pair<View,String >(imageView,"logo_image");
-                pairs[1] = new Pair<View,String >(logo,"logo_text");
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    ActivityOptions options= ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
-                    startActivity(intent,options.toBundle());
-                    finish();
-                }
-            }
-        },SPLASH_SCREEN);
+//        new Handler().postDelayed(new Runnable() {
+//            @Override
+//            public void run() {
+//                Intent intent= new Intent(MainActivity.this,LoginActivity.class);
+//                Pair[] pairs= new Pair[2];
+//                pairs[0] = new Pair<View,String >(imageView,"logo_image");
+//                pairs[1] = new Pair<View,String >(logo,"logo_text");
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+//                    ActivityOptions options= ActivityOptions.makeSceneTransitionAnimation(MainActivity.this,pairs);
+//                    startActivity(intent,options.toBundle());
+//                    finish();
+//                }
+//            }
+//        },SPLASH_SCREEN);
     }
 }

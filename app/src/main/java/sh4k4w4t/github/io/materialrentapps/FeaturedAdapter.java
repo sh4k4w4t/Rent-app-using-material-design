@@ -13,9 +13,9 @@ import java.util.ArrayList;
 
 public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.FeaturedViewHolder> {
 
-    ArrayList<FeaturedHelperClass> featuredLocations;
+    ArrayList<Model_image_title_desc> featuredLocations;
 
-    public FeaturedAdapter(ArrayList<FeaturedHelperClass> featuredLocations) {
+    public FeaturedAdapter(ArrayList<Model_image_title_desc> featuredLocations) {
         this.featuredLocations = featuredLocations;
     }
 
@@ -27,10 +27,10 @@ public class FeaturedAdapter extends RecyclerView.Adapter<FeaturedAdapter.Featur
 
     @Override
     public void onBindViewHolder(@NonNull FeaturedViewHolder holder, int position) {
-        FeaturedHelperClass featuredHelperClass = featuredLocations.get(position);
-        holder.imageView.setImageResource(featuredHelperClass.getImage());
-        holder.title.setText(featuredHelperClass.getTitle());
-        holder.description.setText(featuredHelperClass.getDescription());
+        Model_image_title_desc modelimagetitledesc = featuredLocations.get(position);
+        holder.imageView.setImageResource(modelimagetitledesc.getImage());
+        holder.title.setText(modelimagetitledesc.getTitle());
+        holder.description.setText(modelimagetitledesc.getDescription());
     }
 
     @Override
