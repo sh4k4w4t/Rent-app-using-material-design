@@ -45,6 +45,7 @@
             android:textSize="18sp" />
 
         <RelativeLayout
+            android:id="@+id/viaSMSCode"
             android:layout_width="match_parent"
             android:layout_height="180dp"
             android:layout_marginTop="30dp"
